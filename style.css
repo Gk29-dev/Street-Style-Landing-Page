@@ -1,0 +1,297 @@
+body{
+   margin:0;
+   padding:0;
+   outline: 0;
+   font-family: 'Orbitron',sans-serif;
+}
+.container{
+    margin: 30px 120px;
+    height: 100vh;
+}
+.navbar-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.navbar-container img{
+    height: 30px;
+}
+ .navbar-container .list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+ .list-item{
+   margin:0px 20px;
+   font-size:16px;
+   font-weight: 600;
+   border:2px solid transparent;
+}
+.list-item:hover{
+    border-bottom: 2px solid #000;
+    font-weight: 900;
+    cursor: pointer;
+}
+.navbar-container .button-group{
+    display: flex;
+    flex-direction: row;
+} 
+.button-group .nav-button{
+   padding: 5px 25px;   
+   background-color: transparent;
+   font-size:16px;
+   color:#758283;
+   border-radius:10px;
+   cursor: pointer;
+   margin-left: 5px;
+}
+.button-group .search-icon svg{
+    height: 20px !important;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.hamburger{
+    display: none;
+}
+.hero-container, .hero-container-right{
+    display: inline-block;
+}
+.square{
+    position:relative;
+    left:50px;
+    top:50px;
+}
+.square img{
+    height: 300px;
+}
+.person {
+    position: absolute;
+    left:120px;
+    top:120px;
+}
+.person img{
+    height: 350px;
+}
+.globe{
+    position: absolute;
+    left:50%;
+    top:120px;
+}
+.globe img{
+    height: 40px;
+}
+.star{
+    position: absolute;
+    right:15%;
+    top:120px;
+}
+.star img{
+    height: 40px;
+}
+.hero-container-right{
+    position: absolute;
+    left:40%;
+    top:30%;
+    text-align: center;
+}
+.hero-heading{
+    font-size: 45px;
+}
+.hero-description{
+    font-size:12px;
+    color:#758283;
+    font-family: 'Poppins';
+    word-wrap: break-word;
+    margin: 3% 18%;
+}
+.button-email{
+    padding:3px 25px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid #000;
+    font-size: 14px;
+    font-family: 'Orbitron';
+    font-weight: 700;
+    color:#1f1f1f;
+    margin-top:7%;
+}
+.button-join{
+    font-size:16px;
+    background-color: #000;
+    color: #ffffff;
+    border-radius: 10px;
+    font-family: 'Orbitron';
+    margin-left:10px;
+}
+.contact-heading{
+    width: 50%;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top:8%;
+    font-family: 'Poppins';
+    color:#758283;
+    font-weight: 400;
+}
+.icons{
+    width:50%;
+    margin:-10px auto;
+}
+.icons span img{
+    height: 25px;
+    margin:0 5px;
+}
+
+/* media query for mobile  */
+@media screen and (max-width: 576px) {
+    .container{
+        margin:20px 20px;
+    }
+    .navbar-container img{
+        height: 40px;
+    }
+    .navbar-container .list, .navbar-container .button-group{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        font-size:30px;
+    }
+    .hero-container{
+        flex-direction: column;
+    }
+    .star{
+        top: 67%;
+        margin:20px 0px;
+        right:5%;
+    }
+    .star img{
+        height: 70px;
+    }
+    .globe{
+        top:67%;
+        left:20px;
+        margin:20px 0px;
+    }
+    .person{
+        left:20px;
+    }
+    .person img{
+        height: 370px;
+    }
+    .square{
+        position:absolute;
+        top:30%;
+        left:20%
+
+    }
+    .square img{
+        height: 300px;
+        position: static;
+    }
+    .hero-container-right {
+        left:0px;
+        top:75%;
+    }
+    .hero-heading{
+        margin-top: 60px;
+    }
+    .hero-description{
+        font-size:20px;
+        margin:30px 20px;
+    }
+    .button-email, .button-join{
+        font-size:20px;
+    }
+    .contact-heading{
+        margin-top: 30px;
+        font-size:22px;
+    }
+    .icons{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .icons span img {
+        height: 45px;
+    }
+}
+
+/* media query for tablet */
+@media screen and (min-width:600px) and (max-width:830px) {
+    .container{
+        margin:20px 40px;
+        height:100vh;
+    }
+    .navbar-container img{
+        height: 50px;
+        margin: 10px 0px;
+    }
+    .navbar-container .list, .navbar-container .button-group{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+        font-size:40px;
+    }
+    .hero-container{
+        flex-direction: column;
+    }
+    .star{
+        top: 67%;
+        margin:20px 0px;
+        right:5%;
+    }
+    .star img{
+        height: 70px;
+    }
+    .globe{
+        top:70%;
+        left:60px;
+        margin:20px 0px;
+    }
+    .globe img{
+        height: 50px;
+    }
+    .person{
+        left:20%;
+    }
+    .person img{
+        height: 500px;
+    }
+    .square{
+        position:absolute;
+        top:30%;
+        left:33%
+    }
+    .square img{
+        height: 400px;
+        position: static;
+    }
+    .hero-container-right {
+        left:0px;
+        top:75%;
+    }
+    .hero-heading{
+        margin-top: 60px;
+        font-size:50px;
+    }
+    .hero-description{
+        font-size:25px;
+        margin:30px 20px;
+    }
+    .button-email, .button-join{
+        font-size:26px;
+    }
+    .contact-heading{
+        margin-top: 60px;
+        font-size:25px;
+    }
+    .icons{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .icons span img {
+        height: 60px;
+    }
+}
